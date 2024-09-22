@@ -2,26 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.animated-underline {
+  position: relative;
+}
+.animated-underline::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  @apply bg-amber-600;
+  transition: width 0.3s ease-in-out;
+}
+.animated-underline:hover::after {
+  width: 100%;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.post_content p{
+  @apply mb-7;
+}
+.post_content h1, h2, h3, h4, h5, h6 {
+  @apply mb-3;
+  @apply text-[25px];
+  @apply font-bold;
+  @apply text-black;
+}
+.post_content ul, ol {
+  @apply mb-8;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.post_content{
+  list-style-type: none;
+  @apply pl-0;
+}
+.post_content li{
+  @apply mb-2.5;
+  @apply font-semibold;
+  font-size: 15px;
+}
+.post_content li:before{
+  content: "";
+  display: block;
+  float: left;
+  height: 7px;
+  width: 7px;
+  border-radius: 0px;
+  margin-top: 9px;
+  @apply bg-amber-600;
+  font-size: 1.2em;
+  margin-right: 0.5em;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #d1d5db #f3f4f6;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #d1d5db;
+  border-radius: 4px;
+  border: 2px solid #f3f4f6;
 }
