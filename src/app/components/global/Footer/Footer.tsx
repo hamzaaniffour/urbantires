@@ -20,7 +20,7 @@ const Footer = () => {
             <div className="bg-orange-200 h-[10px] max-w-[135px] mb-5"></div>
             <p className="text-md text-slate-500 mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus corporis, vel culpa optio, aspernatur magnam aperiam voluptatum rem quaer.</p>
             <div className="flex justify-start items-center gap-1.5">
-                <span className="font-semibold text-sm uppercase">Let's be friends:</span>
+                <span className="font-semibold text-sm uppercase">Let&#39;s be friends:</span>
                 <ul className="flex justify-center items-center gap-1">
                 <li>
                     <Link href="/">
