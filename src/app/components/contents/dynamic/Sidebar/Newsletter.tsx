@@ -13,11 +13,11 @@ const SideNewsletter = async () => {
   return (
     <div className="mb-8">
       <h2
-        className={`${frank.className} text-3xl md:leading-[60px] -mb-6 text-black font-black relative z-30`}
+        className={`${frank.className} text-3xl md:leading-[60px] -mb-6 text-blue-950 font-black relative z-30`}
       >
         Newsletter
       </h2>
-      <div className="h-2 bg-orange-200 mb-5 max-w-[145px]"></div>
+      <div className="h-2 bg-pink-200 mb-5 max-w-[145px]"></div>
       <p className="text-slate-800 text-sm -mt-3 mb-3">
         Subscribe to our newsletter for the latest news, updates, and exclusive
         offers.

@@ -8,11 +8,6 @@ import Page from "../components/contents/dynamic/Signles/Page";
 import Category from "../components/contents/dynamic/Signles/Category";
 import SubCategory from "../components/contents/dynamic/Signles/SubCategory";
 
-// import Page from "@/app/components/contents/dynamic/Content/Page";
-// import Post from "@/app/components/contents/dynamic/Content/Post";
-// import Category from "@/app/components/contents/dynamic/Content/Category";
-// import SubCategory from "@/app/components/contents/dynamic/Content/SubCategory";
-
 type Props = {
   params: { slug: string[] };
 };
@@ -88,16 +83,95 @@ export default async function DynamicPage({ params }: Props) {
   const content = await fetchContent(params.slug);
   if (!content) notFound();
 
-  return content.isSubCategory ? (
-    <SubCategory category={content} />
-  ) : content.type === "category" ? (
-    <Category category={content} />
-  ) : content.type === "page" ? (
-    <Page page={content} />
-  ) : content.type === "post" ? (
-    <Article post={content} featuredPosts={[]} />
-  ) : (
-    notFound()
+  // Schema Markup
+  let schemaMarkup = {};
+
+  switch (content.type) {
+    case "post":
+      schemaMarkup = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        headline: content.title,
+        description: content.seo?.metaDesc || content.description,
+        image: content.featuredImage?.node?.sourceUrl || "",
+        author: {
+          "@type": "Person",
+          name: content.author?.node?.name,
+        },
+        datePublished: content.seo?.opengraphPublishedTime,
+        dateModified: content.seo?.opengraphModifiedTime,
+      };
+      break;
+    case "page":
+      schemaMarkup = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        name: content.title,
+        description: content.description,
+      };
+      break;
+    case "category":
+      schemaMarkup = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        name: content.name,
+        itemListElement: Array.isArray(content.posts) ? content.posts.map((post: { title: any; slug: any; }, index: number) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          item: {
+            "@type": "BlogPosting",
+            name: post.title,
+            url: `/${post.slug}`,
+          },
+        })) : [],
+      };
+      break;
+    case "subCategory":
+      schemaMarkup = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        name: content.name,
+        itemListElement: Array.isArray(content.posts) ? content.posts.map((post: { title: any; slug: any; }, index: number) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          item: {
+            "@type": "BlogPosting",
+            name: post.title,
+            url: `/${post.slug}`,
+          },
+        })) : [],
+      };
+      break;
+    default:
+      schemaMarkup = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        name: "Dynamic Content Page",
+      };
+      break;
+  }
+
+  // Stringify the schema markup
+  const jsonLd = JSON.stringify(schemaMarkup);
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd }}
+      />
+      {content.isSubCategory ? (
+        <SubCategory category={content} />
+      ) : content.type === "category" ? (
+        <Category category={content} />
+      ) : content.type === "page" ? (
+        <Page page={content} />
+      ) : content.type === "post" ? (
+        <Article post={content} featuredPosts={[]} />
+      ) : (
+        notFound()
+      )}
+    </>
   );
 }
 

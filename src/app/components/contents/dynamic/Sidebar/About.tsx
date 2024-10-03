@@ -22,11 +22,11 @@ const About = async () => {
   return (
     <div className="mb-8">
       <h2
-        className={`${frank.className} text-3xl md:leading-[60px] -mb-6 text-black font-black relative z-30`}
+        className={`${frank.className} text-3xl md:leading-[60px] -mb-6 text-blue-950 font-black relative z-30`}
       >
         About me
       </h2>
-      <div className="h-2 bg-orange-200 mb-5 max-w-[125px]"></div>
+      <div className="h-2 bg-pink-200 mb-5 max-w-[135px]"></div>
       <div className="relative overflow-hidden flex justify-center items-start">
         <Image
           className="w-full object-contain"
@@ -39,7 +39,7 @@ const About = async () => {
           layout="responsive"
         />
         <div
-          className={`absolute inset-0 bg-gradient-to-t from-amber-600/45 to-transparent opacity-75`}
+          className={`absolute inset-0 bg-gradient-to-t from-pink-700/45 to-transparent opacity-75`}
         ></div>
       </div>
       <div className="mt-3">

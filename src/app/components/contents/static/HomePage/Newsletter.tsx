@@ -12,45 +12,41 @@ const Newsletter = () => {
   };
 
   return (
-    <div className="py-16 bg-white mb-14">
+    <section className="py-16 bg-white mb-14" aria-label="Newsletter Subscription Section">
       <div className="max-w-[90%] sm:max-w-[95%] md:max-w-[1000px] lg:max-w-[1000px] xl:max-w-[1250px] mx-auto">
         <div className="lg:flex">
-          <div className="lg:w-6/12 bg-green-100 text-black font-bold text-center flex justify-center items-center">
+          <div className="lg:w-6/12 bg-green-100 text-blue-950 font-bold text-center flex justify-center items-center">
             <div className="relative overflow-hidden">
               <Image
                 className="w-full object-contain"
                 src={Recipe}
-                alt="Elizabeth Carter"
+                alt="Delicious recipe imagery"
                 width={0}
                 height={0}
                 quality={100}
                 objectFit="cover"
                 layout="responsive"
               />
-              <div
-                className={`absolute inset-0 bg-gradient-to-t from-amber-400/45 to-transparent opacity-75`}
-              ></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-pink-400/45 to-transparent opacity-75"></div>
             </div>
           </div>
-          <div className="lg:w-6/12 bg-slate-50 px-10 py-8 lg:py-0 text-black font-bold text-center flex justify-center items-center flex-col">
-            <h3
-              className={`text-4xl md:text-5xl md:leading-[60px] text-center text-black font-black capitalize`}
-            >
+          <div className="lg:w-6/12 bg-slate-50 px-10 py-8 lg:py-0 text-blue-950 font-bold text-center flex justify-center items-center flex-col">
+            <h3 className="text-4xl md:text-5xl md:leading-[60px] text-center capitalize">
               Keep in Touch!
             </h3>
             <div className="flex justify-center items-center flex-col">
               <div className="max-w-[400px] mx-auto">
-                <div className="h-1 bg-orange-200 my-6 w-[100px]"></div>
+                <div className="h-1 bg-pink-200 my-6 w-[100px]"></div>
               </div>
               <div className="max-w-[400px] mx-auto">
                 <p className="text-slate-600 text-md text-center mb-8 font-normal">
-                  Sign up and I&#39;ll send you great tire care tips and driving
-                  tips!
+                  Sign up and I&#39;ll send you great tire care tips and driving tips!
                 </p>
                 <button
                   onClick={handleSubscribe}
-                  className="py-3 rounded bg-amber-600 text-white font-semibold w-full mb-2 uppercase"
+                  className="py-3 rounded bg-pink-700 text-white font-semibold w-full mb-2 uppercase"
                   type="button"
+                  aria-label="Sign up for email updates"
                 >
                   Sign up for my emails
                 </button>
@@ -63,7 +59,7 @@ const Newsletter = () => {
         </div>
         <Popup popup={popup} setPopup={setPopup} />
       </div>
-    </div>
+    </section>
   );
 };
 

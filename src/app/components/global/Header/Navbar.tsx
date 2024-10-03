@@ -6,10 +6,10 @@ import Right from "./Right";
 const Navbar = () => {
   return (
     <>
-      <div className="bg-amber-600 text-white text-sm text-center py-2.5 italic">
+      <div className="bg-pink-700 text-white text-sm text-center py-2.5 italic">
         Discover the Most Delicious and Trending Recipes of 2024
       </div>
-      <div className="py-3.5 sticky top-0 z-50 bg-white shadow">
+      <nav className="py-3.5 sticky top-0 z-50 bg-white shadow" role="navigation">
         <div className="max-w-[90%] sm:max-w-[95%] md:max-w-[1000px] lg:max-w-[1000px] xl:max-w-[1250px] mx-auto">
           <div className="flex justify-between items-center">
             <div className="flex justify-center items-center gap-16">
@@ -21,7 +21,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-      </div>
+      </nav>
     </>
   );
 };

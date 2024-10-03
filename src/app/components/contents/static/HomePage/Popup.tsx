@@ -99,7 +99,7 @@ const NewsletterPopUp: React.FC<NewsletterPopUpProps> = ({
                       />
                     </div>
                     <h4
-                      className={`${vidaloka.className} text-3xl font-semibold text-black mb-5`}
+                      className={`${vidaloka.className} text-3xl font-semibold text-blue-950 mb-5`}
                     >
                       Keep in touch!
                     </h4>
@@ -110,7 +110,7 @@ const NewsletterPopUp: React.FC<NewsletterPopUpProps> = ({
                       ever share your information.)
                     </p>
                     <p
-                      className={`${vidaloka.className} text-3xl text-black font-bold lowercase mb-8`}
+                      className={`${vidaloka.className} text-3xl text-blue-950 font-bold lowercase mb-8`}
                     >
                       Elizabeth Carter
                     </p>
@@ -123,7 +123,7 @@ const NewsletterPopUp: React.FC<NewsletterPopUpProps> = ({
                       <div className="grid grid-cols-2 gap-2 mb-2">
                         <div className="w-full">
                           <input
-                            className="w-full bg-slate-200 outline-none text-black font-semibold rounded p-3"
+                            className="w-full bg-slate-200 outline-none text-blue-950 font-semibold rounded p-3"
                             type="text"
                             placeholder="First Name"
                             value={firstName}
@@ -133,7 +133,7 @@ const NewsletterPopUp: React.FC<NewsletterPopUpProps> = ({
                         </div>
                         <div className="w-full">
                           <input
-                            className="w-full bg-slate-200 outline-none text-black font-semibold rounded p-3"
+                            className="w-full bg-slate-200 outline-none text-blue-950 font-semibold rounded p-3"
                             type="text"
                             placeholder="Last Name"
                             value={lastName}
@@ -145,7 +145,7 @@ const NewsletterPopUp: React.FC<NewsletterPopUpProps> = ({
                       <div className="grid grid-cols-1 mb-3">
                         <div className="w-full">
                           <input
-                            className="w-full bg-slate-200 outline-none text-black font-semibold rounded p-3"
+                            className="w-full bg-slate-200 outline-none text-blue-950 font-semibold rounded p-3"
                             type="email"
                             placeholder="Email Address"
                             value={email}
@@ -156,7 +156,7 @@ const NewsletterPopUp: React.FC<NewsletterPopUpProps> = ({
                       </div>
                       <button
                         type="submit"
-                        className="py-3 rounded bg-amber-500 transition-all duration-300 hover:bg-amber-600 text-white font-semibold w-full disabled:opacity-50 disabled:cursor-not-allowed"
+                        className="py-3 rounded bg-pink-600 transition-all duration-300 hover:bg-pink-700 text-white font-semibold w-full disabled:opacity-50 disabled:cursor-not-allowed"
                         disabled={loading}
                       >
                         {loading ? "Signing up..." : "Yes, Sign me up"}

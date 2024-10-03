@@ -65,7 +65,7 @@ export default async function SubCategoryPage({ category }: SubCategoryProps) {
   return (
     // <div className="max-w-[90%] sm:max-w-[95%] md:max-w-[1000px] lg:max-w-[1000px] xl:max-w-[1250px] mx-auto md:px-6 px-5 2xl:px-0 mt-24 mb-24">
 
-    //   <h1 className={`${anton.className} text-5xl md:text-6xl lg:text-7xl font-bold xl:text-7xl mb-6 text-zinc-950 uppercase text-center decoration-lime-400 underline`}>{category.name}</h1>
+    //   <h1 className={`${anton.className} text-5xl md:text-6xl lg:text-7xl font-bold xl:text-7xl mb-6 text-blue-950 uppercase text-center decoration-lime-400 underline`}>{category.name}</h1>
     //   <div className="flex justify-center items-center mb-16">
     //     <p className="max-w-[900px] font-medium text-lg text-center text-zinc-900">{category.description}</p>
     //   </div>
@@ -84,7 +84,7 @@ export default async function SubCategoryPage({ category }: SubCategoryProps) {
     //             className="w-full object-cover mb-2 rounded-lg"
     //           />
     //         )}
-    //         <h3 className="text-xl text-zinc-950 font-semibold hover:text-blue-600">
+    //         <h3 className="text-xl text-blue-950 font-semibold hover:text-blue-600">
     //           {post.title}
     //         </h3>
     //       </Link>
@@ -99,7 +99,7 @@ export default async function SubCategoryPage({ category }: SubCategoryProps) {
             <li>
               <Link
                 href="/"
-                className="text-slate-800 transition-all hover:text-black font-semibold text-sm"
+                className="text-slate-800 transition-all hover:text-blue-950 font-semibold text-sm"
               >
                 Home
               </Link>
@@ -107,7 +107,7 @@ export default async function SubCategoryPage({ category }: SubCategoryProps) {
             <li>
               <GoChevronRight className="text-slate-400" />
             </li>
-            <li className="text-slate-800 transition-all hover:text-black font-semibold text-sm">
+            <li className="text-slate-800 transition-all hover:text-blue-950 font-semibold text-sm">
               <Link href={`/${category.parentSlug}`}>
                 {formatSlug(category.parentSlug)}
               </Link>
@@ -115,7 +115,7 @@ export default async function SubCategoryPage({ category }: SubCategoryProps) {
             <li>
               <GoChevronRight className="text-slate-400" />
             </li>
-            <li className="text-slate-800 transition-all hover:text-black font-semibold text-sm">
+            <li className="text-slate-800 transition-all hover:text-blue-950 font-semibold text-sm">
               {category.name}
             </li>
           </ol>
@@ -125,7 +125,7 @@ export default async function SubCategoryPage({ category }: SubCategoryProps) {
         <div className="lg:flex gap-16">
           <div className="lg:w-9/12">
             <h1
-              className={`${vidaloka.className} text-5xl md:text-6xl capitalize lg:text-6xl font-bold text-left mb-3 text-zinc-950 decoration-[#${process.env.NEXT_PUBLIC_SECONDARY_COLOR}] underline`}
+              className={`${vidaloka.className} text-5xl md:text-6xl capitalize lg:text-6xl font-bold text-left mb-3 text-blue-950 decoration-[#${process.env.NEXT_PUBLIC_SECONDARY_COLOR}] underline`}
             >
               {category.name}
             </h1>
@@ -158,7 +158,7 @@ export default async function SubCategoryPage({ category }: SubCategoryProps) {
                   <div className="flex justify-center items-center">
                     <Link
                       href={`/${post.slug}`}
-                      className={`h-14 w-14 bg-white transition-all hover:bg-[#${process.env.NEXT_PUBLIC_SECONDARY_COLOR}] text-zinc-950 hover:text-white rounded-full shadow-md -mt-7 flex justify-center items-center`}
+                      className={`h-14 w-14 bg-white transition-all hover:bg-[#${process.env.NEXT_PUBLIC_SECONDARY_COLOR}] text-blue-950 hover:text-white rounded-full shadow-md -mt-7 flex justify-center items-center`}
                     >
                       <GoPlus className="size-8" />
                     </Link>
@@ -178,7 +178,7 @@ export default async function SubCategoryPage({ category }: SubCategoryProps) {
                     </div>
                     <Link href={`/${post.slug}`}>
                       <h2
-                        className={`${vidaloka.className} text-xl font-bold mb-3 text-black`}
+                        className={`${vidaloka.className} text-xl font-bold mb-3 text-blue-950`}
                       >
                         {post.title}
                       </h2>
@@ -199,7 +199,7 @@ export default async function SubCategoryPage({ category }: SubCategoryProps) {
               {/* Newsletter Start */}
               <div className="mb-8">
                 <h3
-                  className={`${vidaloka.className} text-black italic text-3xl font-bold py-3.5 border-y-2 border-slate-200 mb-2`}
+                  className={`${vidaloka.className} text-blue-950 italic text-3xl font-bold py-3.5 border-y-2 border-slate-200 mb-2`}
                 >
                   Stay Connected
                 </h3>
@@ -210,7 +210,7 @@ export default async function SubCategoryPage({ category }: SubCategoryProps) {
                 <form action="">
                   <input
                     type="email"
-                    className="w-full text-zinc-950 font-semibold text-md bg-slate-100 rounded py-3.5 px-4 mb-2"
+                    className="w-full text-blue-950 font-semibold text-md bg-slate-100 rounded py-3.5 px-4 mb-2"
                     placeholder="Enter your email"
                   />
                   <button
@@ -234,7 +234,7 @@ export default async function SubCategoryPage({ category }: SubCategoryProps) {
               {/* Newsletter End */}
               <section className="mb-8 sticky top-[100px]">
                 <h2
-                  className={`${vidaloka.className} text-black italic text-3xl font-bold py-3.5 border-y-2 border-slate-200 mb-4`}
+                  className={`${vidaloka.className} text-blue-950 italic text-3xl font-bold py-3.5 border-y-2 border-slate-200 mb-4`}
                 >
                   Recent Posts
                 </h2>
@@ -281,7 +281,7 @@ export default async function SubCategoryPage({ category }: SubCategoryProps) {
                           </span>
                           <Link
                             href={`/${post.slug}`}
-                            className="flex-1 font-semibold text-md text-zinc-950 capitalize text-base hover:underline"
+                            className="flex-1 font-semibold text-md text-blue-950 capitalize text-base hover:underline"
                           >
                             {truncateContent(post.title, 50)}
                           </Link>

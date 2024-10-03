@@ -12,7 +12,7 @@
   height: 3px;
   bottom: 0;
   left: 0;
-  @apply bg-amber-600;
+  @apply bg-pink-700;
   transition: width 0.3s ease-in-out;
 }
 .animated-underline:hover::after {
@@ -26,7 +26,7 @@
   @apply mb-3;
   @apply text-[25px];
   @apply font-bold;
-  @apply text-black;
+  @apply text-blue-950;
 }
 .post_content ul, ol {
   @apply mb-8;
@@ -49,7 +49,7 @@
   width: 7px;
   border-radius: 0px;
   margin-top: 9px;
-  @apply bg-amber-600;
+  @apply bg-pink-700;
   font-size: 1.2em;
   margin-right: 0.5em;
 }

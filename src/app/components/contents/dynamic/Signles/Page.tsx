@@ -1,12 +1,12 @@
-import { Vidaloka } from "next/font/google";
+import { Frank_Ruhl_Libre } from "next/font/google";
 import React from "react";
-// import Aboutme from "../../static/Sidebar/Aboutme";
-// import Newsletter from "../../static/Sidebar/Newsletter";
-// import RecentPosts from "../../static/Sidebar/RecentPosts";
+import RecentPosts from "../Sidebar/RecentPosts";
+import SideNewsletter from "../Sidebar/Newsletter";
+import About from "../Sidebar/About";
 
-const vidaloka = Vidaloka({
+const frank = Frank_Ruhl_Libre({
   subsets: ["latin"],
-  weight: "400",
+  weight: "600",
   variable: "--font-old-standard-tt",
 });
 
@@ -25,20 +25,22 @@ export default function pagePage({ page }: pageProps) {
         <div className="lg:w-9/12 lg:border-r-[1px] lg:border-slate-200 lg:pr-10">
           <article>
             <h1
-              className={`${vidaloka.className} text-2xl text-left md:text-4xl text-zinc-950 mb-10 decoration-emerald-500 underline`}
+              className={`${frank.className} text-2xl md:text-4xl text-blue-950 mb-10 text-center decoration-pink-600 underline`}
             >
               {page.title}
             </h1>
-            <div
-              className="post_content text-zinc-800 font-normal text-lg"
-              dangerouslySetInnerHTML={{ __html: page.content }}
-            />
           </article>
+          <section>
+            <p
+              className="post_content text-slate-800 text-[17px] tracking-[.2px] leading-[1.5] mb-8"
+              dangerouslySetInnerHTML={{ __html: page.content }}
+            ></p>
+          </section>
         </div>
         <div className="lg:w-3/12">
-          {/* <Aboutme />
-          <Newsletter />
-          <RecentPosts /> */}
+          <About />
+          <SideNewsletter />
+          <RecentPosts />
         </div>
       </div>
     </div>

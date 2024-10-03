@@ -22,13 +22,13 @@ const RecentPosts = async () => {
   const posts = await blog_articles();
 
   return (
-    <div className="mb-8">
+    <div className="mb-8 sticky top-[80px]">
       <h2
-        className={`${frank.className} text-3xl md:leading-[60px] -mb-6 text-black font-black relative z-30`}
+        className={`${frank.className} text-3xl md:leading-[60px] -mb-6 text-blue-950 font-black relative z-30`}
       >
         Recent Posts
       </h2>
-      <div className="h-2 bg-orange-200 mb-5 max-w-[170px]"></div>
+      <div className="h-2 bg-pink-200 mb-5 max-w-[170px]"></div>
       <div>
         {posts.length > 0 ? (
           <ul>
@@ -46,7 +46,7 @@ const RecentPosts = async () => {
                     className="float-left w-20 rounded"
                   />
                   <div className="flex-col">
-                    <h3 className="text-[13px] mb-1 text-black font-semibold">
+                    <h3 className="text-[13px] mb-1 text-blue-950 font-semibold">
                       {truncateContent(post.title!, 40)}
                     </h3>
                     <p className="text-[11px] text-slate-600">

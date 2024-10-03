@@ -50,7 +50,7 @@ export async function getMenuByName(
 ): Promise<MenuItem[] | string> {
   const menus = await getMenus();
   if (menus === null) {
-    return "Your Network Connection is Lost";
+    return "ADD A MENU";
   }
   const menu = menus.find(
     (m: { name: string }) => m.name.toLowerCase() === name.toLowerCase()

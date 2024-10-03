@@ -122,16 +122,16 @@ const TableOfContents = ({ toc }: { toc: { text: string; id: string }[] }) => (
   <nav className="lg:w-2/12 hidden lg:block">
     <div className="sticky top-[100px]">
       <h2
-        className={`font-semibold text-lg mb-4 uppercase underline text-slate-700 decoration-amber-500 underline-offset-[3px]`}
+        className="font-semibold text-lg mb-4 uppercase underline text-slate-700 decoration-pink-600 underline-offset-[3px]"
       >
         In This Recipe
       </h2>
       <ul>
         {toc.map((item) => (
-          <li key={item.id} className="mb-2.5">
+          <li key={item.id} className="mb-1.5 leading-[20px] border-b-[1px] border-slate-200 pb-1.5">
             <Link
               href={`#${item.id}`}
-              className="toc-link text-zinc-500 text-md transition-all hover:text-slate-950"
+              className="toc-link text-slate-700 font-semibold text-sm transition-all hover:text-slate-950"
             >
               {item.text}
             </Link>
@@ -155,18 +155,18 @@ const MainContent = ({
     <header>
       <nav aria-label="Breadcrumb" className="-mb-3">
         <ol className="flex justify-start items-center gap-2">
-          <li className="text-zinc-950 text-xs font-bold uppercase">
+          <li className="text-blue-950 text-xs font-bold uppercase">
             <Link href="/">Home</Link>
           </li>
           <li className="inline-block text-slate-500 text-sm">/</li>
-          <li className="text-zinc-950 text-xs font-bold uppercase">
+          <li className="text-blue-950 text-xs font-bold uppercase">
             <Link href={`/${post.categories.nodes[0].slug}`}>
               {post.categories.nodes[0].name}
             </Link>
           </li>
           <li className="inline-block text-slate-500 text-sm">/</li>
           <li
-            className="text-zinc-950 text-xs font-bold uppercase"
+            className="text-blue-950 text-xs font-bold uppercase"
             aria-current="page"
           >
             {truncateContent(post.title, 30)}
@@ -174,7 +174,7 @@ const MainContent = ({
         </ol>
       </nav>
       <h1
-        className={`${frank.className} text-3xl lg:text-4xl lg:leading-[45px] font-black text-black`}
+        className={`${frank.className} text-3xl lg:text-4xl lg:leading-[45px] font-black text-blue-950`}
       >
         {post.title}
       </h1>
@@ -186,7 +186,7 @@ const MainContent = ({
         ></div>
         <div className="flex justify-center items-start flex-col">
           <p className="text-slate-900 uppercase text-sm font-bold">
-            by: <Link href="/about" className="hover:text-amber-600 transition-all duration-500">{post.author.node.name}</Link>
+            by: <Link href="/about" className="hover:text-pink-700 transition-all duration-500">{post.author.node.name}</Link>
           </p>
           <time
             dateTime={post.seo.opengraphPublishedTime}
@@ -258,10 +258,10 @@ const MainContent = ({
         </figure>
       )}
 
-      <div
-        className="post_content text-zinc-900 text-[17px] tracking-[.2px] leading-[1.5] mb-8"
+      <p
+        className="post_content text-slate-800 text-[17px] tracking-[.2px] leading-[1.5] mb-8"
         dangerouslySetInnerHTML={{ __html: modifiedContent }}
-      />
+      ></p>
     </section>
   </article>
 );
