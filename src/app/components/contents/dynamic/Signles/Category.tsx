@@ -94,7 +94,7 @@ export default async function Category({ category }: CategoryProps) {
           </ol>
         </nav>
       </header>
-      <section className="bg-pink-50 py-10 border-b-2 border-pink-100">
+      <section className="bg-blue-50 py-10 border-b-2 border-blue-100">
         <div className="max-w-[90%] sm:max-w-[95%] md:max-w-[1000px] lg:max-w-[1000px] xl:max-w-[1250px] mx-auto">
           <h1
             className={`text-4xl text-center md:text-5xl md:leading-[60px] text-blue-950 font-black mb-5 ${frank.className}`}
@@ -114,7 +114,7 @@ export default async function Category({ category }: CategoryProps) {
             >
               Featured Articles
             </h2>
-            <div className="h-2.5 bg-pink-200 mb-7 max-w-[280px]"></div>
+            <div className="h-2.5 bg-blue-200 mb-7 max-w-[280px]"></div>
 
             <div className="grid grid-cols-2 gap-2 md:gap-4">
               {category.posts.nodes.slice(0, 2).map((post) => (
@@ -186,7 +186,7 @@ export default async function Category({ category }: CategoryProps) {
                     ></div>
                     <div className="flex flex-col p-6 col-span-full row-span-full lg:col-span-8 lg:p-10">
                       <div className="flex justify-start">
-                        <span className="px-2 py-1 text-xs rounded-full bg-pink-200 font-semibold text-pink-600">
+                        <span className="px-2 py-1 text-xs rounded-full bg-blue-200 font-semibold text-blue-700">
                           {category.name}
                         </span>
                       </div>
@@ -202,9 +202,9 @@ export default async function Category({ category }: CategoryProps) {
                       <Link
                         rel="noopener noreferrer"
                         href={`/${post.slug}`}
-                        className="inline-flex items-center pt-2 pb-6 space-x-2 text-sm text-pink-700"
+                        className="inline-flex items-center pt-2 pb-6 space-x-2 text-sm text-blue-800"
                       >
-                        <span className="animated-underline font-semibold underline decoration-pink-700 underline-offset-2">
+                        <span className="animated-underline font-semibold underline decoration-blue-800 underline-offset-2">
                           Learn more{" "}
                           <BsArrowRight className="inline size-4 relative -top-[0.5px] ml-0.5" aria-hidden="true" />
                         </span>
@@ -213,7 +213,7 @@ export default async function Category({ category }: CategoryProps) {
                         <div className="flex space-x-2">
                           <span className="self-center text-sm text-slate-700">
                             <FiUser className="inline size-4 relative -top-[1px]" aria-hidden="true" />{" "}
-                            Elizabeth Carter
+                            Easton Boehm
                           </span>
                         </div>
                         <time dateTime={post.date} className="text-xs text-slate-700">

@@ -26,7 +26,7 @@ const About = async () => {
                 objectFit="contain"
                 layout="responsive"
               />
-              <div className={`absolute inset-0 mask mask-squircle bg-gradient-to-t from-pink-300/45 to-transparent opacity-75`} />
+              <div className={`absolute inset-0 mask mask-squircle bg-gradient-to-t from-blue-300/45 to-transparent opacity-75`} />
             </div>
           </div>
           <div className="lg:w-8/12">
@@ -39,7 +39,7 @@ const About = async () => {
               </p>
               <Link
                 href="/about"
-                className="text-center lg:text-left w-full text-md font-semibold text-blue-950 underline underline-offset-[3px] decoration-pink-600 capitalize"
+                className="text-center lg:text-left w-full text-md font-semibold text-blue-950 underline underline-offset-[3px] decoration-blue-700 capitalize"
                 aria-label={`Learn more about ${author.name}`}
               >
                 <span className="animated-underline">Learn more here</span>

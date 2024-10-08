@@ -17,7 +17,7 @@ const SideNewsletter = async () => {
       >
         Newsletter
       </h2>
-      <div className="h-2 bg-pink-200 mb-5 max-w-[145px]"></div>
+      <div className="h-2 bg-blue-200 mb-5 max-w-[145px]"></div>
       <p className="text-slate-800 text-sm -mt-3 mb-3">
         Subscribe to our newsletter for the latest news, updates, and exclusive
         offers.

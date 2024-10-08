@@ -18,14 +18,14 @@ const ContactUS = () => {
         <div className="lg:w-9/12 lg:border-r-[1px] lg:border-slate-200 lg:pr-10">
           <article>
             <h1
-              className={`${frank.className} text-2xl md:text-4xl text-blue-950 mb-10 text-center decoration-pink-600 underline`}
+              className={`${frank.className} text-2xl md:text-4xl text-blue-950 mb-10 text-center decoration-blue-700 underline`}
             >Contact us at TastyEats</h1>
           </article>
           <section>
             <p className="text-slate-800 font-normal text-md mb-2.5">
             We&#39;d love to hear from you! Whether you have a question about a recipe, feedback on our content, or just want to share your culinary experiences, feel free to get in touch.
             </p>
-            <p className="text-slate-800 font-normal text-md mb-2.5">You can reach us at <Link href="mailto:hello@tastyeats.net" className="font-semibold transition-all hover:text-pink-600">hello@tastyeats.net,</Link> and we&#39;ll respond as soon as possible.</p>
+            <p className="text-slate-800 font-normal text-md mb-2.5">You can reach us at <Link href="mailto:hello@tastyeats.net" className="font-semibold transition-all hover:text-blue-700">hello@tastyeats.net,</Link> and we&#39;ll respond as soon as possible.</p>
             <p className="text-slate-800 font-normal text-md">Stay connected with us for updates, new recipes, and cooking tips. We&#39;re here to help make your cooking journey both fun and flavorful!</p>
             <form action="" className="mt-8">
               <div className="grid grid-cols-2 gap-6 mb-6">
@@ -108,7 +108,7 @@ const ContactUS = () => {
               </div>
               <button
                 type="button"
-                className="px-6 py-3 bg-pink-600 transition-all hover:bg-pink-700 text-white font-bold rounded-md"
+                className="px-6 py-3 bg-blue-700 transition-all hover:bg-blue-800 text-white font-bold rounded-md"
               >
                 Send Message
               </button>

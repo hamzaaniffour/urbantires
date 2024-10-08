@@ -112,7 +112,7 @@ const NewsletterPopUp: React.FC<NewsletterPopUpProps> = ({
                     <p
                       className={`${vidaloka.className} text-3xl text-blue-950 font-bold lowercase mb-8`}
                     >
-                      Elizabeth Carter
+                      Easton Boehm
                     </p>
                     <form
                       onSubmit={(e) => {
@@ -156,7 +156,7 @@ const NewsletterPopUp: React.FC<NewsletterPopUpProps> = ({
                       </div>
                       <button
                         type="submit"
-                        className="py-3 rounded bg-pink-600 transition-all duration-300 hover:bg-pink-700 text-white font-semibold w-full disabled:opacity-50 disabled:cursor-not-allowed"
+                        className="py-3 rounded bg-blue-700 transition-all duration-300 hover:bg-blue-800 text-white font-semibold w-full disabled:opacity-50 disabled:cursor-not-allowed"
                         disabled={loading}
                       >
                         {loading ? "Signing up..." : "Yes, Sign me up"}

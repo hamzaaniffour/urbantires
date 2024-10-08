@@ -1,4 +1,4 @@
-import HeroRecipes from "./components/HeroRecipes";
+import HeroTires from "./components/HeroTires";
 import RecipesByCategory from "./components/contents/dynamic/HomePage/Block1";
 import PopularRecipes from "./components/contents/dynamic/HomePage/Block2";
 import TrendingRecipes from "./components/contents/dynamic/HomePage/Block3";
@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
     
-    <HeroRecipes />
+    <HeroTires />
     <RecipesByCategory />
     <About />
     <PopularRecipes />

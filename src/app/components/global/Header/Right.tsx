@@ -6,7 +6,7 @@ const Right = () => {
   return (
     <div className='flex justify-center items-center gap-6'>
       <div>
-        <button className='bg-pink-200 transition-all hover:bg-pink-300 text-pink-700 font-semibold px-4 py-1 rounded'>Newsletter</button>
+        <button className='bg-blue-200 transition-all hover:bg-blue-300 text-blue-800 font-semibold px-4 py-1 rounded'>Newsletter</button>
       </div>
       <div>
         <button className='py-1' aria-label="Search">

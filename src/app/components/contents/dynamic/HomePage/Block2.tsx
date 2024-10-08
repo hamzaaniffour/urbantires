@@ -24,9 +24,9 @@ const PopularRecipes = async () => {
   return (
     <section className="max-w-[90%] sm:max-w-[95%] md:max-w-[1000px] lg:max-w-[1000px] xl:max-w-[1250px] mx-auto mb-20" aria-label="Popular Recipes Section">
       <div className="flex justify-center items-center flex-col">
-        <h2 className="text-violet-950 font-bold mb-5 text-4xl text-center">
-          Popular{" "}
-          <span className="bg-pink-700 rounded text-white px-2 py-0.5 pb-1.5">Recipes</span>
+        <h2 className="text-violet-950 font-bold mb-5 text-3xl text-center uppercase">
+          Featured{" "}
+          <span className="bg-blue-800 font-semibold rounded text-white py-0.5 px-2">Articles</span>
         </h2>
         <p className="text-slate-400 max-w-[600px] text-center mb-8">
           From breakfast to dinner, explore a variety of easy-to-follow recipes that bring bold flavors to your table without the hassle.
@@ -48,7 +48,7 @@ const PopularRecipes = async () => {
                 <div className="flex justify-center items-center">
                   <Link
                     href={`/${post.slug}`}
-                    className="rounded-full h-20 w-20 bg-pink-700 border-[5px] border-white transition-all hover:bg-pink-600 text-white -mt-10 flex justify-center items-center"
+                    className="rounded-full h-20 w-20 bg-blue-800 border-[5px] border-white transition-all hover:bg-blue-700 text-white -mt-10 flex justify-center items-center"
                     aria-label={`Read more about ${post.title}`}
                   >
                     <GoPlus className="size-10" />
@@ -58,7 +58,7 @@ const PopularRecipes = async () => {
                   <div className="flex justify-start items-center gap-1 mt-1 mb-4">
                     <Link
                       href="/about"
-                      className="animated-underline text-slate-800 text-sm font-semibold underline decoration-pink-700 underline-offset-2"
+                      className="animated-underline text-slate-800 text-sm font-semibold underline decoration-blue-800 underline-offset-2"
                       aria-label="About the author"
                     >
                       Elisabeth Milner
@@ -69,7 +69,7 @@ const PopularRecipes = async () => {
                     <p className="text-sm text-slate-500">{formatDate(post.date)}</p>
                   </div>
                   <Link href={`/${post.slug}`} aria-label={`Read ${post.title}`}>
-                    <h2 className="text-lg leading-6 font-bold mb-3 text-blue-950 transition-all hover:text-pink-700 capitalize">
+                    <h2 className="text-lg leading-6 font-bold mb-3 text-blue-950 transition-all hover:text-blue-800 capitalize">
                       {post.title}
                     </h2>
                   </Link>

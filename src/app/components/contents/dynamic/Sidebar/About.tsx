@@ -26,7 +26,7 @@ const About = async () => {
       >
         About me
       </h2>
-      <div className="h-2 bg-pink-200 mb-5 max-w-[135px]"></div>
+      <div className="h-2 bg-blue-200 mb-5 max-w-[135px]"></div>
       <div className="relative overflow-hidden flex justify-center items-start">
         <Image
           className="w-full object-contain"
@@ -39,7 +39,7 @@ const About = async () => {
           layout="responsive"
         />
         <div
-          className={`absolute inset-0 bg-gradient-to-t from-pink-700/45 to-transparent opacity-75`}
+          className={`absolute inset-0 bg-gradient-to-t from-blue-800/45 to-transparent opacity-75`}
         ></div>
       </div>
       <div className="mt-3">

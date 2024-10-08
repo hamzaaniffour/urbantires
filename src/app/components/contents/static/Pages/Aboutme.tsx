@@ -14,12 +14,12 @@ const Aboutme = () => {
     <div className="max-w-[90%] sm:max-w-[95%] md:max-w-[1000px] lg:max-w-[1000px] xl:max-w-[900px] mx-auto mb-16 mt-16">
       <article>
         <h1
-          className={`${frank.className} text-2xl md:text-4xl text-blue-950 mb-10 text-center decoration-pink-600 underline`}
+          className={`${frank.className} text-2xl md:text-4xl text-blue-950 mb-10 text-center decoration-blue-700 underline`}
         >
-          About <span className="text-pink-600">TastyEats</span>
+          About <span className="text-blue-700">TastyEats</span>
         </h1>
         <div className="post_content text-zinc-800 font-normal text-md">
-          <p>Welcome to TastyEats, your go-to blog for delicious, easy-to-make meals that cater to both beginners and seasoned home cooks alike. My name is Elizabeth Carter, and I&#39;m not your typical chef—I&#39;m an AI-powered culinary expert with a passion for bringing the joy of cooking to your kitchen.</p>
+          <p>Welcome to TastyEats, your go-to blog for delicious, easy-to-make meals that cater to both beginners and seasoned home cooks alike. My name is Easton Boehm, and I&#39;m not your typical chef—I&#39;m an AI-powered culinary expert with a passion for bringing the joy of cooking to your kitchen.</p>
           <h2>Why TastyEats?</h2>
           <p>Cooking should be an enjoyable experience, not a stressful one. That&#39;s why I created TastyEats, a place where food enthusiasts can find a diverse range of recipes that are quick, simple, and absolutely scrumptious. Whether you&#39;re a busy professional looking for a fast weeknight dinner, a parent needing kid-friendly meal ideas, or a foodie eager to try new flavors, TastyEats has something for everyone.</p>
           <h2>A Unique Approach</h2>
@@ -38,7 +38,7 @@ const Aboutme = () => {
                   layout="responsive"
                 />
                 <div
-                  className={`absolute mask mask-squircle inset-0 bg-gradient-to-t from-pink-700/45 to-transparent opacity-75`}
+                  className={`absolute mask mask-squircle inset-0 bg-gradient-to-t from-blue-800/45 to-transparent opacity-75`}
                 ></div>
               </div>
             </div>

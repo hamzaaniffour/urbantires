@@ -27,7 +27,7 @@ const Newsletter = () => {
                 objectFit="cover"
                 layout="responsive"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-pink-400/45 to-transparent opacity-75"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-blue-400/45 to-transparent opacity-75"></div>
             </div>
           </div>
           <div className="lg:w-6/12 bg-slate-50 px-10 py-8 lg:py-0 text-blue-950 font-bold text-center flex justify-center items-center flex-col">
@@ -36,7 +36,7 @@ const Newsletter = () => {
             </h3>
             <div className="flex justify-center items-center flex-col">
               <div className="max-w-[400px] mx-auto">
-                <div className="h-1 bg-pink-200 my-6 w-[100px]"></div>
+                <div className="h-1 bg-blue-200 my-6 w-[100px]"></div>
               </div>
               <div className="max-w-[400px] mx-auto">
                 <p className="text-slate-600 text-md text-center mb-8 font-normal">
@@ -44,7 +44,7 @@ const Newsletter = () => {
                 </p>
                 <button
                   onClick={handleSubscribe}
-                  className="py-3 rounded bg-pink-700 text-white font-semibold w-full mb-2 uppercase"
+                  className="py-3 rounded bg-blue-800 text-white font-semibold w-full mb-2 uppercase"
                   type="button"
                   aria-label="Sign up for email updates"
                 >

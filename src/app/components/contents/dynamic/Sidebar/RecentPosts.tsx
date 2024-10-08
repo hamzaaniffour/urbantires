@@ -28,7 +28,7 @@ const RecentPosts = async () => {
       >
         Recent Posts
       </h2>
-      <div className="h-2 bg-pink-200 mb-5 max-w-[170px]"></div>
+      <div className="h-2 bg-blue-200 mb-5 max-w-[170px]"></div>
       <div>
         {posts.length > 0 ? (
           <ul>

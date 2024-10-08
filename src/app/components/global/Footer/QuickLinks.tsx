@@ -13,8 +13,8 @@ const MenuItemComponent = ({ item }: { item: MenuItem }) => {
 
   return (
     <li className="mb-2">
-      <Link href={href} className="text-blue-950 font-semibold text-md hover:text-pink-700 transition-all">
-        <FaCaretRight className="inline-block size-4 text-pink-600 relative -top-[1px]" />
+      <Link href={href} className="text-blue-950 font-semibold text-md hover:text-blue-800 transition-all">
+        <FaCaretRight className="inline-block size-4 text-blue-700 relative -top-[1px]" />
         {item.label}
       </Link>
     </li>

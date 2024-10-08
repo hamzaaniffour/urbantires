@@ -30,7 +30,7 @@ export default function RootLayout({
     <html lang="en" data-theme="light">
       <body className={`${geistSans.className} antialiased bg-slate-50`}>
         <NextTopLoader
-          color="#f9a8d4"
+          color="#60a5fa"
           initialPosition={0.08}
           crawlSpeed={200}
           height={3}

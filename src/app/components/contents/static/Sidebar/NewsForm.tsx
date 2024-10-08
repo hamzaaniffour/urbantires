@@ -10,7 +10,7 @@ const Newsletter = () => {
         placeholder='Enter your email'
         required
       />
-      <button type='submit' className="px-4 py-2.5 text-sm bg-pink-700 border border-pink-700 transition-all hover:bg-pink-600 text-white font-bold">
+      <button type='submit' className="px-4 py-2.5 text-sm bg-blue-800 border border-blue-800 transition-all hover:bg-blue-700 text-white font-bold">
         <BiSend className='size-5' />
       </button>
     </form>

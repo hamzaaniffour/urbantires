@@ -22,7 +22,7 @@ const MenuItemComponent = ({ item }: { item: MenuItem }) => {
     <li className="relative group no-last-gap">
       <Link
         href={href}
-        className={`font-semibold text-blue-950 hover:text-pink-700 transition-all text-lg py-[19px]`}
+        className={`font-semibold text-blue-950 hover:text-blue-800 transition-all text-lg py-[19px]`}
       >
         {item.label}
         {hasChildItems(item) && <MdOutlineKeyboardArrowDown className="inline-block size-5 relative -top-[1px] -ml-0.5 -mr-1" />}
@@ -33,7 +33,7 @@ const MenuItemComponent = ({ item }: { item: MenuItem }) => {
             <li key={childItem.id}>
               <Link
                 href={cleanCategoryPath(childItem.path || childItem.url || childItem.uri || `/${childItem.label.toLowerCase().replace(/\s+/g, "-")}`)}
-                className={`block text-pink-700 hover:bg-pink-50 text-[15px] py-2 px-3 border-b-[1px] border-slate-200 hover:text-pink-600 capitalize font-semibold`}
+                className={`block text-blue-800 hover:bg-blue-50 text-[15px] py-2 px-3 border-b-[1px] border-slate-200 hover:text-blue-700 capitalize font-semibold`}
               >
                 {childItem.label}
               </Link>

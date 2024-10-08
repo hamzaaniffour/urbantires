@@ -113,7 +113,7 @@ const Search = () => {
                 />
                 <button
                   type="submit"
-                  className="mt-2 py-2 px-4 bg-amber-600 text-white rounded font-semibold"
+                  className="mt-2 py-2 px-4 bg-blue-600 text-white rounded font-semibold"
                 >
                   Search
                 </button>
@@ -149,7 +149,7 @@ const Search = () => {
                                   quality={100}
                                 />
                               )}
-                              <h3 className="text-amber-600 text-xl hover:underline mb-3">
+                              <h3 className="text-blue-600 text-xl hover:underline mb-3">
                                 {post.title.rendered}
                               </h3>
                               <div

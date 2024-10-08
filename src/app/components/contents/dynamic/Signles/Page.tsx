@@ -25,7 +25,7 @@ export default function pagePage({ page }: pageProps) {
         <div className="lg:w-9/12 lg:border-r-[1px] lg:border-slate-200 lg:pr-10">
           <article>
             <h1
-              className={`${frank.className} text-2xl md:text-4xl text-blue-950 mb-10 text-center decoration-pink-600 underline`}
+              className={`${frank.className} text-2xl md:text-4xl text-blue-950 mb-10 text-center decoration-blue-700 underline`}
             >
               {page.title}
             </h1>

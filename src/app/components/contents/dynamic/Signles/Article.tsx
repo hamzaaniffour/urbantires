@@ -122,7 +122,7 @@ const TableOfContents = ({ toc }: { toc: { text: string; id: string }[] }) => (
   <nav className="lg:w-2/12 hidden lg:block">
     <div className="sticky top-[100px]">
       <h2
-        className="font-semibold text-lg mb-4 uppercase underline text-slate-700 decoration-pink-600 underline-offset-[3px]"
+        className="font-semibold text-lg mb-4 uppercase underline text-slate-700 decoration-blue-700 underline-offset-[3px]"
       >
         In This Recipe
       </h2>
@@ -186,7 +186,7 @@ const MainContent = ({
         ></div>
         <div className="flex justify-center items-start flex-col">
           <p className="text-slate-900 uppercase text-sm font-bold">
-            by: <Link href="/about" className="hover:text-pink-700 transition-all duration-500">{post.author.node.name}</Link>
+            by: <Link href="/about" className="hover:text-blue-800 transition-all duration-500">{post.author.node.name}</Link>
           </p>
           <time
             dateTime={post.seo.opengraphPublishedTime}
